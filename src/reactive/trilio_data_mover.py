@@ -51,7 +51,7 @@ def install_trilio_data_mover():
     validate_ip_nfs = validate_ip(tv_nfs_path)
 
     if validate_ip_nfs:
-        # Return code is 0, so the IP address is invalid. Set status as blocked
+        # IP address is invalid. Set status as blocked
         # and return
         status_set(
             'blocked',
